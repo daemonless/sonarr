@@ -1,0 +1,48 @@
+ARG BASE_VERSION=15
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+ARG FREEBSD_ARCH=amd64
+LABEL org.opencontainers.image.title="sonarr" \
+      org.opencontainers.image.description="Sonarr TV show management on FreeBSD" \
+      org.opencontainers.image.source="https://github.com/daemonless/sonarr" \
+      org.opencontainers.image.url="https://sonarr.tv/" \
+      org.opencontainers.image.documentation="https://wiki.servarr.com/sonarr" \
+      org.opencontainers.image.licenses="GPL-3.0-only" \
+      org.opencontainers.image.vendor="daemonless" \
+      org.opencontainers.image.authors="daemonless" \
+      io.daemonless.port="8989" \
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.volumes="/tv,/downloads" \
+      org.freebsd.jail.allow.mlock="required"
+
+# Install Sonarr from FreeBSD packages
+RUN pkg update && \
+    pkg install -y sonarr && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
+
+# Override package_info to show container update instructions
+RUN SONARR_VERSION=$(pkg info sonarr | sed -n 's/.*Version.*: *//p') && \
+    printf "UpdateMethod=docker\nBranch=main\nPackageVersion=%s\nPackageAuthor=[daemonless](https://github.com/daemonless/daemonless)\n" "$SONARR_VERSION" > /usr/local/share/sonarr/package_info && \
+    mkdir -p /app && echo "$SONARR_VERSION" > /app/version
+
+# Create config directory
+RUN mkdir -p /config && \
+    chown -R bsd:bsd /config
+
+# Copy service definition
+COPY root/ /
+
+# Use pkg-specific run script
+COPY root/etc/services.d/sonarr/run.pkg /etc/services.d/sonarr/run
+
+# Make scripts executable
+RUN chmod +x /etc/services.d/sonarr/run /etc/cont-init.d/* 2>/dev/null || true
+
+# Set up s6 service link
+RUN mkdir -p /run/s6/services/sonarr && \
+    ln -sf /etc/services.d/sonarr/run /run/s6/services/sonarr/run
+
+EXPOSE 8989
+VOLUME /config
+
