@@ -4,7 +4,7 @@ FROM ghcr.io/daemonless/arr-base:${BASE_VERSION}
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="sonarr"
 
-LABEL org.opencontainers.image.title="sonarr" \
+LABEL org.opencontainers.image.title="Sonarr" \
     org.opencontainers.image.description="Sonarr TV show management on FreeBSD" \
     org.opencontainers.image.source="https://github.com/daemonless/sonarr" \
     org.opencontainers.image.url="https://sonarr.tv/" \
