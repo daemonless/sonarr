@@ -23,7 +23,9 @@ LABEL org.opencontainers.image.title="Sonarr" \
 
 # Install Sonarr from FreeBSD packages
 RUN pkg update && \
-    pkg install -y ${PACKAGES}
+    pkg install -y ${PACKAGES} && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
 # Download and install Sonarr (fetch latest v4-stable FreeBSD URL from API)
 RUN mkdir -p /usr/local/share/sonarr && \
