@@ -28,7 +28,7 @@ RUN pkg update && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
 # Download and install Sonarr (fetch latest v4-stable FreeBSD URL from API)
-RUN mkdir -p /usr/local/share/sonarr && \
+RUN mkdir -p /usr/local/share/sonarr /config && \
     SONARR_VERSION=$(fetch -qo - "https://services.sonarr.tv/v1/releases" | \
     grep -o '"version":"[^"]*"' | head -n 1 | cut -d '"' -f 4) && \
     SONARR_URL=$(fetch -qo - "https://services.sonarr.tv/v1/releases" | \
@@ -41,10 +41,7 @@ RUN mkdir -p /usr/local/share/sonarr && \
     chmod +x /usr/local/share/sonarr/Sonarr && \
     chmod -R o+rX /usr/local/share/sonarr && \
     printf "UpdateMethod=docker\nBranch=main\nPackageVersion=%s\nPackageAuthor=[daemonless](https://github.com/daemonless/daemonless)\n" "$SONARR_VERSION" > /usr/local/share/sonarr/package_info && \
-    mkdir -p /app && echo "$SONARR_VERSION" > /app/version
-
-# Create config directory
-RUN mkdir -p /config && \
+    mkdir -p /app && echo "$SONARR_VERSION" > /app/version && \
     chown -R bsd:bsd /usr/local/share/sonarr /config
 
 # Copy service definition and init scripts
