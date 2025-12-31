@@ -4,8 +4,8 @@ FROM ghcr.io/daemonless/arr-base:${BASE_VERSION}
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="sonarr"
 ARG SONARR_BRANCH="main"
-ARG UPSTREAM_URL="https://services.sonarr.tv/v1/download/main/latest?version=4&os=freebsd"
-ARG UPSTREAM_SED="grep -o '\"version\":\"[^\"]*\"' | head -1 | cut -d'\"' -f4"
+ARG UPSTREAM_URL="https://services.sonarr.tv/v1/releases"
+ARG UPSTREAM_JQ=".\"v4-stable\".version"
 
 LABEL org.opencontainers.image.title="Sonarr" \
     org.opencontainers.image.description="Sonarr TV show management on FreeBSD" \
@@ -21,7 +21,7 @@ LABEL org.opencontainers.image.title="Sonarr" \
     org.freebsd.jail.allow.mlock="required" \
     io.daemonless.category="Media Management" \
     io.daemonless.upstream-url="${UPSTREAM_URL}" \
-    io.daemonless.upstream-sed="${UPSTREAM_SED}" \
+    io.daemonless.upstream-jq="${UPSTREAM_JQ}" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install Sonarr from FreeBSD packages
