@@ -6,6 +6,9 @@ ARG PACKAGES="sonarr"
 ARG SONARR_BRANCH="main"
 ARG UPSTREAM_URL="https://services.sonarr.tv/v1/releases"
 ARG UPSTREAM_JQ=".\"v4-stable\".version"
+ARG HEALTHCHECK_ENDPOINT="http://localhost:8989/ping"
+
+ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
 
 LABEL org.opencontainers.image.title="Sonarr" \
     org.opencontainers.image.description="Sonarr TV show management on FreeBSD" \
@@ -22,6 +25,7 @@ LABEL org.opencontainers.image.title="Sonarr" \
     io.daemonless.category="Media Management" \
     io.daemonless.upstream-url="${UPSTREAM_URL}" \
     io.daemonless.upstream-jq="${UPSTREAM_JQ}" \
+    io.daemonless.healthcheck-url="${HEALTHCHECK_ENDPOINT}" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install Sonarr from FreeBSD packages
