@@ -3,6 +3,8 @@ FROM ghcr.io/daemonless/arr-base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="sonarr"
+ARG UPSTREAM_URL="https://services.sonarr.tv/v1/releases"
+ARG UPSTREAM_SED="s/.*\"v4-stable\":{[^}]*\"version\":\"\\([^\"]*\\)\".*/\\1/p"
 
 LABEL org.opencontainers.image.title="Sonarr" \
     org.opencontainers.image.description="Sonarr TV show management on FreeBSD" \
@@ -17,8 +19,8 @@ LABEL org.opencontainers.image.title="Sonarr" \
     io.daemonless.volumes="/tv,/downloads" \
     org.freebsd.jail.allow.mlock="required" \
     io.daemonless.category="Media Management" \
-    io.daemonless.upstream-mode="sonarr" \
-    io.daemonless.upstream-url="https://services.sonarr.tv/v1/releases" \
+    io.daemonless.upstream-url="${UPSTREAM_URL}" \
+    io.daemonless.upstream-sed="${UPSTREAM_SED}" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install Sonarr from FreeBSD packages
@@ -29,8 +31,8 @@ RUN pkg update && \
 
 # Download and install Sonarr (fetch latest v4-stable FreeBSD URL from API)
 RUN mkdir -p /usr/local/share/sonarr /config && \
-    SONARR_VERSION=$(fetch -qo - "https://services.sonarr.tv/v1/releases" | \
-    grep -o '"version":"[^"]*"' | head -n 1 | cut -d '"' -f 4) && \
+    SONARR_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | \
+    sed -n "${UPSTREAM_SED}" | head -1) && \
     SONARR_URL=$(fetch -qo - "https://services.sonarr.tv/v1/releases" | \
     grep -o '"freeBsd":{"x64":{"archive":{"url":"[^"]*"' | \
     sed -n '1s/.*"url":"\([^"]*\)".*/\1/p') && \
