@@ -5,6 +5,7 @@ ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="sonarr"
 ARG SONARR_BRANCH="main"
 ARG UPSTREAM_URL="https://services.sonarr.tv/v1/releases"
+ARG DOWNLOAD_URL="https://services.sonarr.tv/v1/download/${SONARR_BRANCH}/latest?version=4&os=freebsd"
 ARG UPSTREAM_JQ=".\"v4-stable\".version"
 ARG HEALTHCHECK_ENDPOINT="http://localhost:8989/ping"
 
@@ -35,17 +36,8 @@ RUN pkg update && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
 # Download and install Sonarr
-RUN mkdir -p /usr/local/share/sonarr /config && \
-    SONARR_VERSION=$(fetch -qo - "https://services.sonarr.tv/v1/releases" | \
-    grep -o '"v4-stable":{[^}]*"version":"[^"]*"' | grep -o '"version":"[^"]*"' | cut -d'"' -f4) && \
-    fetch -qo - "https://services.sonarr.tv/v1/download/${SONARR_BRANCH}/latest?version=4&os=freebsd" | \
-    tar xzf - -C /usr/local/share/sonarr --strip-components=1 && \
-    rm -rf /usr/local/share/sonarr/Sonarr.Update && \
-    chmod +x /usr/local/share/sonarr/Sonarr && \
-    chmod -R o+rX /usr/local/share/sonarr && \
-    printf "UpdateMethod=docker\nBranch=main\nPackageVersion=%s\nPackageAuthor=[daemonless](https://github.com/daemonless/daemonless)\n" "$SONARR_VERSION" > /usr/local/share/sonarr/package_info && \
-    mkdir -p /app && echo "$SONARR_VERSION" > /app/version && \
-    chown -R bsd:bsd /usr/local/share/sonarr /config
+RUN SONARR_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | grep -o '"v4-stable":{[^}]*"version":"[^"]*"' | grep -o '"version":"[^"]*"' | cut -d'"' -f4) && \
+    install-arr.sh "sonarr" "Sonarr" "$SONARR_VERSION" "${DOWNLOAD_URL}" "${SONARR_BRANCH}"
 
 # Copy service definition and init scripts
 COPY root/ /
