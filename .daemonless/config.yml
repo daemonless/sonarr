@@ -1,0 +1,8 @@
+# daemonless metadata and cit config
+icon: ':material-television:'
+
+cit:
+  port: 8989
+  health: /ping
+  annotations:
+    - org.freebsd.jail.allow.mlock=true
