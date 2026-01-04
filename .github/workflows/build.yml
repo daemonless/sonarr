@@ -113,6 +113,7 @@ jobs:
             rm -rf /var/db/containers /var/lib/containers 2>/dev/null || true
             kldload pf
             sysctl net.inet.ip.forwarding=1
+            sysctl kern.ipc.shm_allow_removed=1
           run: |
             set -e
 
