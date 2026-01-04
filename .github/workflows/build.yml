@@ -144,9 +144,9 @@ jobs:
             # Test with cit (only for :latest tag, non-PR)
             if [ "${{ matrix.tag }}" = "latest" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
               echo "=== Running cit tests ==="
-              fetch -qo - https://github.com/daemonless/cit/releases/download/v0.1.0/cit-0.1.0.tar.gz | tar xz
+              fetch -qo - https://github.com/daemonless/cit/releases/download/v0.1.1/cit-0.1.1.tar.gz | tar xz
 
-              ./cit-0.1.0/cit localhost/${{ env.IMAGE_NAME }}:${{ matrix.tag }} \
+              ./cit-0.1.1/cit localhost/${{ env.IMAGE_NAME }}:${{ matrix.tag }} \
                 --repo . \
                 --screenshot /tmp/${{ env.IMAGE_NAME }}.png \
                 --verify \
