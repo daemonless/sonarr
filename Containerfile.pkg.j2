@@ -3,18 +3,24 @@ FROM ghcr.io/daemonless/base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PKG_NAME=sonarr
-LABEL org.opencontainers.image.title="Sonarr" \
-      org.opencontainers.image.description="Sonarr TV series management on FreeBSD." \
-      org.opencontainers.image.source="https://github.com/daemonless/sonarr" \
-      org.opencontainers.image.url="https://sonarr.tv/" \
+LABEL org.opencontainers.image.title="{{ title }}" \
+      org.opencontainers.image.description="{{ description }}" \
+      org.opencontainers.image.source="{{ repo_url }}" \
+      org.opencontainers.image.url="{{ web_url }}" \
       org.opencontainers.image.documentation="https://wiki.servarr.com/sonarr" \
       org.opencontainers.image.licenses="GPL-3.0-only" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
-      io.daemonless.port="8989" \
+{%- if ports %}
+      io.daemonless.port="{{ ports[0].port }}" \
+{%- endif %}
       io.daemonless.arch="${FREEBSD_ARCH}" \
-      io.daemonless.volumes="/config,/tv,/downloads" \
+{%- if volumes %}
+      io.daemonless.volumes="{{ volumes | map(attribute='path') | join(',') }}" \
+{%- endif %}
+{%- if mlock %}
       org.freebsd.jail.allow.mlock="required" \
+{%- endif %}
       io.daemonless.pkg-name="${PKG_NAME}"
 
 # Install from FreeBSD packages
@@ -46,7 +52,11 @@ RUN mkdir -p /run/s6/services/sonarr && \
     ln -sf /etc/services.d/sonarr/run /run/s6/services/sonarr/run
 
 # --- Expose (Injected by Generator) ---
-EXPOSE 8989
+{%- if ports %}
+EXPOSE {{ ports | map(attribute='port') | join(' ') }}
+{%- endif %}
 
 # --- Volumes (Injected by Generator) ---
-VOLUME /config /tv /downloads
+{%- if volumes %}
+VOLUME {{ volumes | map(attribute='path') | join(' ') }}
+{%- endif %}

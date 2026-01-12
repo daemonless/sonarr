@@ -1,41 +1,17 @@
-# sonarr
+# Sonarr
 
-TV show collection manager for Usenet and BitTorrent users.
+Sonarr TV series management on FreeBSD.
 
-## Environment Variables
+| | |
+|---|---|
+| **Port** | 8989 |
+| **Registry** | `ghcr.io/daemonless/sonarr` |
+| **Source** | [https://github.com/Sonarr/Sonarr](https://github.com/Sonarr/Sonarr) |
+| **Website** | [https://sonarr.tv/](https://sonarr.tv/) |
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `PUID` | User ID for the application process | `1000` |
-| `PGID` | Group ID for the application process | `1000` |
-| `TZ` | Timezone for the container | `UTC` |
-| `S6_LOG_ENABLE` | Enable/Disable file logging | `1` |
-| `S6_LOG_MAX_SIZE` | Max size per log file (bytes) | `1048576` |
-| `S6_LOG_MAX_FILES` | Number of rotated log files to keep | `10` |
+## Deployment
 
-## Logging
-
-This image uses `s6-log` for internal log rotation.
-- **System Logs**: Captured from console and stored at `/config/logs/daemonless/sonarr/`.
-- **Application Logs**: Managed by the app and typically found in `/config/logs/`.
-- **Podman Logs**: Output is mirrored to the console, so `podman logs` still works.
-
-## Quick Start
-
-```bash
-podman run -d --name sonarr \
-  -p 8989:8989 \
-  --annotation 'org.freebsd.jail.allow.mlock=true' \
-  -e PUID=1000 -e PGID=1000 \
-  -v /path/to/config:/config \
-  -v /path/to/tv:/tv \
-  -v /path/to/downloads:/downloads \
-  ghcr.io/daemonless/sonarr:latest
-```
-
-Access at: http://localhost:8989
-
-## podman-compose
+### Podman Compose
 
 ```yaml
 services:
@@ -45,11 +21,11 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/New_York
+      - TZ=UTC
     volumes:
-      - /data/config/sonarr:/config
-      - /data/media/tv:/tv
-      - /data/downloads:/downloads
+      - /path/to/containers/sonarr:/config
+      - /path/to/tv:/tv # optional
+      - /path/to/downloads:/downloads # optional
     ports:
       - 8989:8989
     annotations:
@@ -57,45 +33,71 @@ services:
     restart: unless-stopped
 ```
 
-## Tags
+### Podman CLI
 
-| Tag | Source | Description |
-|-----|--------|-------------|
-| `:latest` | [Upstream Releases](https://services.sonarr.tv/v1/releases) | Latest upstream release |
-| `:pkg` | `net-p2p/sonarr` | FreeBSD quarterly packages |
-| `:pkg-latest` | `net-p2p/sonarr` | FreeBSD latest packages |
+```bash
+podman run -d --name sonarr \
+  -p 8989:8989 \
+  --annotation 'org.freebsd.jail.allow.mlock=true' \
+  -e PUID=@PUID@ \
+  -e PGID=@PGID@ \
+  -e TZ=@TZ@ \
+  -v /path/to/containers/sonarr:/config \ 
+  -v /path/to/tv:/tv \  # optional
+  -v /path/to/downloads:/downloads \  # optional
+  ghcr.io/daemonless/sonarr:latest
+```
+Access at: `http://localhost:8989`
 
-## Environment Variables
+### Ansible
+
+```yaml
+- name: Deploy sonarr
+  containers.podman.podman_container:
+    name: sonarr
+    image: ghcr.io/daemonless/sonarr:latest
+    state: started
+    restart_policy: always
+    env:
+      PUID: "1000"
+      PGID: "1000"
+      TZ: "UTC"
+    ports:
+      - "8989:8989"
+    volumes:
+      - "/path/to/containers/sonarr:/config"
+      - "/path/to/tv:/tv" # optional
+      - "/path/to/downloads:/downloads" # optional
+    annotation:
+      org.freebsd.jail.allow.mlock: "true"
+```
+
+## Configuration
+
+### Environment Variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `PUID` | 1000 | User ID for app |
-| `PGID` | 1000 | Group ID for app |
-| `TZ` | UTC | Timezone |
+| `PUID` | `1000` | User ID for the application process |
+| `PGID` | `1000` | Group ID for the application process |
+| `TZ` | `UTC` | Timezone for the container |
 
-## Volumes
+### Volumes
 
 | Path | Description |
 |------|-------------|
 | `/config` | Configuration directory |
-| `/tv` | TV show library |
-| `/downloads` | Download directory |
+| `/tv` | TV Series library (Optional) |
+| `/downloads` | Download directory (Optional) |
 
-## Ports
+### Ports
 
-| Port | Description |
-|------|-------------|
-| 8989 | Web UI |
+| Port | Protocol | Description |
+|------|----------|-------------|
+| `8989` | TCP | Web UI |
 
 ## Notes
 
-- **User:** `bsd` (UID/GID set via PUID/PGID, default 1000)
-- **Base:** Built on `ghcr.io/daemonless/base-image` (FreeBSD)
-
-### Specific Requirements
-- **.NET App:** Requires `--annotation 'org.freebsd.jail.allow.mlock=true'` (Requires [patched ocijail](https://github.com/daemonless/daemonless#ocijail-patch))
-
-## Links
-
-- [Website](https://sonarr.tv/)
-- [FreshPorts](https://www.freshports.org/net-p2p/sonarr/)
+- **User:** `bsd` (UID/GID set via PUID/PGID)
+- **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)
+- **.NET App:** Requires `--annotation 'org.freebsd.jail.allow.mlock=true'` and a [patched ocijail](https://daemonless.io/guides/ocijail-patch).
