@@ -12,7 +12,7 @@ ARG PACKAGES="sonarr"
 ARG SONARR_BRANCH="main"
 ARG UPSTREAM_URL="https://services.sonarr.tv/v1/releases"
 ARG DOWNLOAD_URL="https://services.sonarr.tv/v1/download/${SONARR_BRANCH}/latest?version=4&os=freebsd"
-ARG UPSTREAM_JQ=".v4-stable.version"
+ARG UPSTREAM_JQ='.["v4-stable"].version'
 ARG HEALTHCHECK_ENDPOINT="http://localhost:8989/ping"
 
 ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
