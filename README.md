@@ -11,6 +11,7 @@ Sonarr TV series management on FreeBSD.
 |---|---|
 | **Port** | 8989 |
 | **Registry** | `ghcr.io/daemonless/sonarr` |
+| **Docs** | [daemonless.io/images/sonarr](https://daemonless.io/images/sonarr/) |
 | **Source** | [https://github.com/Sonarr/Sonarr](https://github.com/Sonarr/Sonarr) |
 | **Website** | [https://sonarr.tv/](https://sonarr.tv/) |
 
