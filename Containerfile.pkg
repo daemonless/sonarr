@@ -9,6 +9,8 @@ FROM ghcr.io/daemonless/base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PKG_NAME=sonarr
+
+# --- Metadata (Injected by Generator) ---
 LABEL org.opencontainers.image.title="Sonarr" \
       org.opencontainers.image.description="Sonarr TV series management on FreeBSD." \
       org.opencontainers.image.source="https://github.com/daemonless/sonarr" \
@@ -17,11 +19,12 @@ LABEL org.opencontainers.image.title="Sonarr" \
       org.opencontainers.image.licenses="GPL-3.0-only" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
+      io.daemonless.category="Media Management" \
       io.daemonless.port="8989" \
-      io.daemonless.arch="${FREEBSD_ARCH}" \
       io.daemonless.volumes="/config,/tv,/downloads" \
       org.freebsd.jail.allow.mlock="required" \
-      io.daemonless.pkg-name="${PKG_NAME}"
+      io.daemonless.pkg-name="${PKG_NAME}" \
+      io.daemonless.arch="${FREEBSD_ARCH}"
 
 # Install from FreeBSD packages
 RUN pkg update && \
