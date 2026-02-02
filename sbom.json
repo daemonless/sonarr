@@ -1,11 +1,11 @@
 {
   "image": "sonarr",
-  "generated": "2026-02-01T22:50:56Z",
+  "generated": "2026-02-02T13:57:28Z",
   "tags": {
     "latest": {
       "app_version": "4.0.16.2944",
       "source": "upstream-binary",
-      "generated": "2026-02-01T22:50:43Z",
+      "generated": "2026-02-02T13:49:52Z",
       "packages": {
         "freebsd": [
           {
@@ -254,7 +254,7 @@
     "pkg-latest": {
       "app_version": "4.0.16.2944_1",
       "source": "freebsd-latest",
-      "generated": "2026-02-01T22:50:35Z",
+      "generated": "2026-02-02T13:57:17Z",
       "packages": {
         "freebsd": [
           {
@@ -467,7 +467,7 @@
     "pkg": {
       "app_version": "4.0.16.2944",
       "source": "freebsd-quarterly",
-      "generated": "2026-02-01T22:48:32Z",
+      "generated": "2026-02-02T13:48:22Z",
       "packages": {
         "freebsd": [
           {
