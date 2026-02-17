@@ -2,6 +2,7 @@
 icon: ':material-television:'
 
 cit:
+  mode: screenshot
   port: 8989
   health: /ping
   annotations:
