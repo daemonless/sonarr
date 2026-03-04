@@ -1,12 +1,12 @@
 {
   "image": "sonarr",
-  "generated": "2026-02-17T20:03:23Z",
+  "generated": "2026-03-04T09:25:38Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "4.0.16.2944",
       "source": "upstream",
-      "generated": "2026-02-17T20:01:45Z",
+      "generated": "2026-03-04T09:24:34Z",
       "packages": {
         "freebsd": [
           {
@@ -240,12 +240,8 @@
         ],
         "dotnet": [
           {
-            "name": "Sonarr.SignalR",
+            "name": "Sonarr.Core",
             "version": "4.0.16"
-          },
-          {
-            "name": "BouncyCastle.Cryptography",
-            "version": "2.4.0"
           },
           {
             "name": "Dapper",
@@ -256,20 +252,96 @@
             "version": "1.0.4"
           },
           {
-            "name": "DryIoc.dll",
-            "version": "5.4.3"
-          },
-          {
-            "name": "Dynamitey",
-            "version": "2.0.9.136"
-          },
-          {
             "name": "Equ",
             "version": "2.3.0"
           },
           {
             "name": "FluentValidation",
             "version": "9.5.4"
+          },
+          {
+            "name": "MailKit",
+            "version": "4.8.0"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+            "version": "6.0.21"
+          },
+          {
+            "name": "Microsoft.Data.SqlClient",
+            "version": "2.1.7"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration",
+            "version": "6.0.1"
+          },
+          {
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "6.0.1"
+          },
+          {
+            "name": "MonoTorrent",
+            "version": "2.0.7"
+          },
+          {
+            "name": "NLog",
+            "version": "5.3.4"
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "13.0.3"
+          },
+          {
+            "name": "Npgsql",
+            "version": "7.0.9"
+          },
+          {
+            "name": "Polly",
+            "version": "8.5.0"
+          },
+          {
+            "name": "Servarr.FFMpegCore",
+            "version": "4.7.0-26"
+          },
+          {
+            "name": "Servarr.FFprobe",
+            "version": "5.1.4.112"
+          },
+          {
+            "name": "Servarr.FluentMigrator.Runner",
+            "version": "3.3.2.9"
+          },
+          {
+            "name": "Servarr.FluentMigrator.Runner.Postgres",
+            "version": "3.3.2.9"
+          },
+          {
+            "name": "Servarr.FluentMigrator.Runner.SQLite",
+            "version": "3.3.2.9"
+          },
+          {
+            "name": "SixLabors.ImageSharp",
+            "version": "3.1.7"
+          },
+          {
+            "name": "System.Data.SQLite.Core.Servarr",
+            "version": "1.0.115.5-18"
+          },
+          {
+            "name": "System.Text.Json",
+            "version": "6.0.10"
+          },
+          {
+            "name": "BouncyCastle.Cryptography",
+            "version": "2.4.0"
+          },
+          {
+            "name": "DryIoc.dll",
+            "version": "5.4.3"
+          },
+          {
+            "name": "Dynamitey",
+            "version": "2.0.9.136"
           },
           {
             "name": "IPAddressRange",
@@ -288,15 +360,7 @@
             "version": "1.6.1"
           },
           {
-            "name": "MailKit",
-            "version": "4.8.0"
-          },
-          {
             "name": "Microsoft.AspNetCore.Cryptography.Internal",
-            "version": "6.0.21"
-          },
-          {
-            "name": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
             "version": "6.0.21"
           },
           {
@@ -308,23 +372,11 @@
             "version": "8.0.0"
           },
           {
-            "name": "Microsoft.Data.SqlClient",
-            "version": "2.1.7"
-          },
-          {
-            "name": "Microsoft.Extensions.Configuration",
-            "version": "6.0.1"
-          },
-          {
             "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
             "version": "6.0.1"
           },
           {
             "name": "Microsoft.Extensions.Configuration.UserSecrets",
-            "version": "6.0.1"
-          },
-          {
-            "name": "Microsoft.Extensions.DependencyInjection",
             "version": "6.0.1"
           },
           {
@@ -376,14 +428,6 @@
             "version": "3.0.1"
           },
           {
-            "name": "MonoTorrent",
-            "version": "2.0.7"
-          },
-          {
-            "name": "NLog",
-            "version": "5.3.4"
-          },
-          {
             "name": "NLog.Extensions.Logging",
             "version": "5.3.15"
           },
@@ -396,20 +440,8 @@
             "version": "7.0.0"
           },
           {
-            "name": "Newtonsoft.Json",
-            "version": "13.0.3"
-          },
-          {
             "name": "NodaTime",
             "version": "3.2.0"
-          },
-          {
-            "name": "Npgsql",
-            "version": "7.0.9"
-          },
-          {
-            "name": "Polly",
-            "version": "8.5.0"
           },
           {
             "name": "Polly.Contrib.WaitAndRetry",
@@ -426,14 +458,6 @@
           {
             "name": "Sentry",
             "version": "4.0.2"
-          },
-          {
-            "name": "Servarr.FFMpegCore",
-            "version": "4.7.0-26"
-          },
-          {
-            "name": "Servarr.FFprobe",
-            "version": "5.1.4.112"
           },
           {
             "name": "Servarr.FluentMigrator",
@@ -457,10 +481,6 @@
           },
           {
             "name": "Servarr.FluentMigrator.Extensions.SqlServer",
-            "version": "3.3.2.9"
-          },
-          {
-            "name": "Servarr.FluentMigrator.Runner",
             "version": "3.3.2.9"
           },
           {
@@ -488,15 +508,7 @@
             "version": "3.3.2.9"
           },
           {
-            "name": "Servarr.FluentMigrator.Runner.Postgres",
-            "version": "3.3.2.9"
-          },
-          {
             "name": "Servarr.FluentMigrator.Runner.Redshift",
-            "version": "3.3.2.9"
-          },
-          {
-            "name": "Servarr.FluentMigrator.Runner.SQLite",
             "version": "3.3.2.9"
           },
           {
@@ -516,10 +528,6 @@
             "version": "1.4.2"
           },
           {
-            "name": "SixLabors.ImageSharp",
-            "version": "3.1.7"
-          },
-          {
             "name": "Swashbuckle.AspNetCore.Annotations",
             "version": "6.6.2"
           },
@@ -534,10 +542,6 @@
           {
             "name": "System.Configuration.ConfigurationManager",
             "version": "6.0.1"
-          },
-          {
-            "name": "System.Data.SQLite.Core.Servarr",
-            "version": "1.0.115.5-18"
           },
           {
             "name": "System.Drawing.Common",
@@ -570,10 +574,6 @@
           {
             "name": "System.ServiceProcess.ServiceController",
             "version": "6.0.1"
-          },
-          {
-            "name": "System.Text.Json",
-            "version": "6.0.10"
           },
           {
             "name": "System.Windows.Extensions",
@@ -668,7 +668,7 @@
             "version": "6.0.0"
           },
           {
-            "name": "Sonarr.Core",
+            "name": "Sonarr.Api.V3",
             "version": "4.0.16"
           },
           {
@@ -692,15 +692,11 @@
             "version": "2.3.3"
           },
           {
-            "name": "Sonarr.Http",
-            "version": "4.0.16"
-          },
-          {
             "name": "Sonarr.Mono",
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Host",
+            "name": "Sonarr.SignalR",
             "version": "4.0.16"
           }
         ],
@@ -714,7 +710,7 @@
       },
       "summary": {
         "freebsd": 57,
-        "dotnet": 116,
+        "dotnet": 115,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -722,14 +718,14 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 173
+        "total": 172
       }
     },
     "pkg-latest": {
       "arch": "amd64",
       "app_version": "4.0.16.2944_1",
       "source": "pkg",
-      "generated": "2026-02-17T20:02:05Z",
+      "generated": "2026-03-04T09:25:23Z",
       "packages": {
         "freebsd": [
           {
@@ -898,7 +894,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.5.1"
+            "version": "2.6.0"
           },
           {
             "name": "readline",
@@ -1371,6 +1367,10 @@
             "version": "4.0.16"
           },
           {
+            "name": "Sonarr.Mono",
+            "version": "4.0.16"
+          },
+          {
             "name": "Mono.Posix.NETStandard",
             "version": "5.20.1.34-servarr24"
           },
@@ -1381,6 +1381,10 @@
           {
             "name": "Lib.Harmony",
             "version": "2.3.3"
+          },
+          {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.16"
           }
         ],
         "go": [],
@@ -1393,7 +1397,7 @@
       },
       "summary": {
         "freebsd": 48,
-        "dotnet": 114,
+        "dotnet": 116,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1401,14 +1405,14 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 162
+        "total": 164
       }
     },
     "pkg": {
       "arch": "amd64",
       "app_version": "4.0.16.2944",
       "source": "pkg",
-      "generated": "2026-02-17T20:03:10Z",
+      "generated": "2026-03-04T09:19:38Z",
       "packages": {
         "freebsd": [
           {
@@ -1606,24 +1610,68 @@
         ],
         "dotnet": [
           {
-            "name": "Sonarr.Api.V3",
+            "name": "Sonarr.Common",
             "version": "4.0.16"
           },
           {
-            "name": "FluentValidation",
-            "version": "9.5.4"
+            "name": "DryIoc.dll",
+            "version": "5.4.3"
           },
           {
-            "name": "Ical.Net",
-            "version": "4.3.1"
+            "name": "IPAddressRange",
+            "version": "6.1.0"
+          },
+          {
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "6.0.1"
+          },
+          {
+            "name": "Microsoft.Extensions.Hosting.WindowsServices",
+            "version": "6.0.2"
           },
           {
             "name": "NLog",
             "version": "5.3.4"
           },
           {
-            "name": "Swashbuckle.AspNetCore.Annotations",
-            "version": "6.6.2"
+            "name": "NLog.Extensions.Logging",
+            "version": "5.3.15"
+          },
+          {
+            "name": "NLog.Layouts.ClefJsonLayout",
+            "version": "1.0.2"
+          },
+          {
+            "name": "NLog.Targets.Syslog",
+            "version": "7.0.0"
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "13.0.3"
+          },
+          {
+            "name": "Sentry",
+            "version": "4.0.2"
+          },
+          {
+            "name": "SharpZipLib",
+            "version": "1.4.2"
+          },
+          {
+            "name": "System.Configuration.ConfigurationManager",
+            "version": "6.0.1"
+          },
+          {
+            "name": "System.Data.SQLite.Core.Servarr",
+            "version": "1.0.115.5-18"
+          },
+          {
+            "name": "System.ServiceProcess.ServiceController",
+            "version": "6.0.1"
+          },
+          {
+            "name": "System.Text.Json",
+            "version": "6.0.10"
           },
           {
             "name": "BouncyCastle.Cryptography",
@@ -1638,10 +1686,6 @@
             "version": "1.0.4"
           },
           {
-            "name": "DryIoc.dll",
-            "version": "5.4.3"
-          },
-          {
             "name": "Dynamitey",
             "version": "2.0.9.136"
           },
@@ -1650,8 +1694,12 @@
             "version": "2.3.0"
           },
           {
-            "name": "IPAddressRange",
-            "version": "6.1.0"
+            "name": "FluentValidation",
+            "version": "9.5.4"
+          },
+          {
+            "name": "Ical.Net",
+            "version": "4.3.1"
           },
           {
             "name": "ImpromptuInterface",
@@ -1698,16 +1746,8 @@
             "version": "6.0.1"
           },
           {
-            "name": "Microsoft.Extensions.DependencyInjection",
-            "version": "6.0.1"
-          },
-          {
             "name": "Microsoft.Extensions.Hosting",
             "version": "6.0.1"
-          },
-          {
-            "name": "Microsoft.Extensions.Hosting.WindowsServices",
-            "version": "6.0.2"
           },
           {
             "name": "Microsoft.Identity.Client",
@@ -1754,22 +1794,6 @@
             "version": "2.0.7"
           },
           {
-            "name": "NLog.Extensions.Logging",
-            "version": "5.3.15"
-          },
-          {
-            "name": "NLog.Layouts.ClefJsonLayout",
-            "version": "1.0.2"
-          },
-          {
-            "name": "NLog.Targets.Syslog",
-            "version": "7.0.0"
-          },
-          {
-            "name": "Newtonsoft.Json",
-            "version": "13.0.3"
-          },
-          {
             "name": "NodaTime",
             "version": "3.2.0"
           },
@@ -1792,10 +1816,6 @@
           {
             "name": "ReusableTasks",
             "version": "2.0.0"
-          },
-          {
-            "name": "Sentry",
-            "version": "4.0.2"
           },
           {
             "name": "Servarr.FFMpegCore",
@@ -1882,12 +1902,12 @@
             "version": "3.3.2.9"
           },
           {
-            "name": "SharpZipLib",
-            "version": "1.4.2"
-          },
-          {
             "name": "SixLabors.ImageSharp",
             "version": "3.1.7"
+          },
+          {
+            "name": "Swashbuckle.AspNetCore.Annotations",
+            "version": "6.6.2"
           },
           {
             "name": "Swashbuckle.AspNetCore.Swagger",
@@ -1896,14 +1916,6 @@
           {
             "name": "Swashbuckle.AspNetCore.SwaggerGen",
             "version": "6.6.2"
-          },
-          {
-            "name": "System.Configuration.ConfigurationManager",
-            "version": "6.0.1"
-          },
-          {
-            "name": "System.Data.SQLite.Core.Servarr",
-            "version": "1.0.115.5-18"
           },
           {
             "name": "System.Drawing.Common",
@@ -1934,20 +1946,8 @@
             "version": "6.0.0"
           },
           {
-            "name": "System.ServiceProcess.ServiceController",
-            "version": "6.0.1"
-          },
-          {
-            "name": "System.Text.Json",
-            "version": "6.0.10"
-          },
-          {
             "name": "System.Windows.Extensions",
             "version": "6.0.0"
-          },
-          {
-            "name": "Sonarr.Common",
-            "version": "4.0.16"
           },
           {
             "name": "Microsoft.Extensions.Configuration.Abstractions",
@@ -2034,16 +2034,20 @@
             "version": "6.0.0"
           },
           {
+            "name": "Sonarr.Core",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.Http",
+            "version": "4.0.16"
+          },
+          {
             "name": "DryIoc.Microsoft.DependencyInjection",
             "version": "6.2.0"
           },
           {
             "name": "Microsoft.AspNetCore.Owin",
             "version": "6.0.21"
-          },
-          {
-            "name": "Sonarr.Core",
-            "version": "4.0.16"
           },
           {
             "name": "Sonarr.Mono",
