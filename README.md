@@ -8,7 +8,7 @@ Source: dbuild templates
 [![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/sonarr/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/sonarr/actions)
 [![Last Commit](https://img.shields.io/github/last-commit/daemonless/sonarr?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/sonarr/commits)
 
-Sonarr TV series management on FreeBSD.
+Automated TV series collection manager that monitors, grabs, and manages your TV library via Usenet and BitTorrent.
 
 | | |
 |---|---|
@@ -23,7 +23,7 @@ Sonarr TV series management on FreeBSD.
 | :--- | :--- | :--- |
 | `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
 | `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Production stability. |
-| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD features. |
+| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ ARG tag=latest
 
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/sonarr:${tag}
-OPTION allow.mlock
+SET allow.mlock=1
 ```
 
 ### Podman CLI

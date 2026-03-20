@@ -12,7 +12,7 @@ ARG PKG_NAME=sonarr
 
 # --- Metadata (Injected by Generator) ---
 LABEL org.opencontainers.image.title="Sonarr" \
-      org.opencontainers.image.description="Sonarr TV series management on FreeBSD." \
+      org.opencontainers.image.description="Automated TV series collection manager that monitors, grabs, and manages your TV library via Usenet and BitTorrent." \
       org.opencontainers.image.source="https://github.com/daemonless/sonarr" \
       org.opencontainers.image.url="https://sonarr.tv/" \
       org.opencontainers.image.documentation="https://wiki.servarr.com/sonarr" \

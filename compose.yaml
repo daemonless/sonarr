@@ -4,13 +4,13 @@ x-daemonless:
   title: "Sonarr"
   icon: ":material-television:"
   category: "Media Management"
-  description: "Sonarr TV series management on FreeBSD."
+  description: "Automated TV series collection manager that monitors, grabs, and manages your TV library via Usenet and BitTorrent."
   upstream_url: "https://github.com/Sonarr/Sonarr"
   web_url: "https://sonarr.tv/"
   freshports_url: "https://www.freshports.org/net-p2p/sonarr/"
   user: "bsd"
   mlock: true
-  appjail:
+  appjail: true
 
   docs:
     env:
