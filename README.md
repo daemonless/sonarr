@@ -7,9 +7,9 @@ Source: dbuild templates
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/sonarr/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/sonarr/actions)
 [![Last Commit](https://img.shields.io/github/last-commit/daemonless/sonarr?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/sonarr/commits)
+[![mlock Required](https://img.shields.io/badge/mlock-required-orange?style=flat-square&logo=freebsd&logoColor=white)](https://daemonless.io/guides/ocijail-patch/)
 
 Automated TV series collection manager that monitors, grabs, and manages your TV library via Usenet and BitTorrent.
-
 
 | | |
 |---|---|
