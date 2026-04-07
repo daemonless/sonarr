@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-05T20:07:12Z",
+  "generated": "2026-04-07T15:02:07Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-04-05T20:04:38Z",
+      "generated": "2026-04-07T14:55:29Z",
       "packages": {
         "dotnet": [
           {
@@ -382,7 +382,7 @@
           },
           {
             "name": "Sonarr.Api.V3",
-            "version": "4.0.17"
+            "version": "4.0.16"
           },
           {
             "name": "Sonarr.Common",
@@ -390,10 +390,10 @@
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.17"
+            "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Http",
+            "name": "Sonarr.Host",
             "version": "4.0.17"
           },
           {
@@ -676,7 +676,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.5.1"
+            "version": "2.6.2_1"
           },
           {
             "name": "readline",
@@ -696,7 +696,7 @@
           },
           {
             "name": "sonarr",
-            "version": "4.0.16.2944"
+            "version": "4.0.16.2944_1"
           },
           {
             "name": "sqlite3",
@@ -726,9 +726,9 @@
       }
     },
     "pkg": {
-      "app_version": "4.0.16.2944",
+      "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-04-05T20:05:28Z",
+      "generated": "2026-04-07T15:00:52Z",
       "packages": {
         "dotnet": [
           {
@@ -1104,10 +1104,6 @@
             "version": "3.1.7"
           },
           {
-            "name": "Sonarr",
-            "version": "4.0.16"
-          },
-          {
             "name": "Sonarr.Api.V3",
             "version": "4.0.16"
           },
@@ -1116,19 +1112,11 @@
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Core",
-            "version": "4.0.16"
-          },
-          {
-            "name": "Sonarr.Http",
-            "version": "4.0.16"
-          },
-          {
-            "name": "Sonarr.Mono",
-            "version": "4.0.16"
-          },
-          {
             "name": "Sonarr.RuntimePatches",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.SignalR",
             "version": "4.0.16"
           },
           {
@@ -1323,7 +1311,7 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "0.26"
+            "version": "1.0"
           },
           {
             "name": "icu",
@@ -1363,7 +1351,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.5.1"
+            "version": "2.6.2_1"
           },
           {
             "name": "readline",
@@ -1379,7 +1367,7 @@
           },
           {
             "name": "sonarr",
-            "version": "4.0.16.2944"
+            "version": "4.0.16.2944_1"
           },
           {
             "name": "sqlite3",
@@ -1396,7 +1384,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 116,
+        "dotnet": 113,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -1405,13 +1393,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 163
+        "total": 160
       }
     },
     "pkg-latest": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-04-05T20:06:02Z",
+      "generated": "2026-04-07T14:59:00Z",
       "packages": {
         "dotnet": [
           {
@@ -1787,7 +1775,7 @@
             "version": "3.1.7"
           },
           {
-            "name": "Sonarr",
+            "name": "Sonarr.Api.V3",
             "version": "4.0.16"
           },
           {
@@ -1796,10 +1784,6 @@
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.16"
-          },
-          {
-            "name": "Sonarr.Http",
             "version": "4.0.16"
           },
           {
@@ -2075,7 +2059,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 115,
+        "dotnet": 114,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2084,7 +2068,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 162
+        "total": 161
       }
     }
   }
