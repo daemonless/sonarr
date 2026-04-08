@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-07T15:43:15Z",
+  "generated": "2026-04-08T20:02:50Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-04-07T15:41:52Z",
+      "generated": "2026-04-08T20:01:30Z",
       "packages": {
         "dotnet": [
           {
@@ -394,15 +394,11 @@
           },
           {
             "name": "Sonarr.Host",
-            "version": "4.0.16"
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.Http",
             "version": "4.0.16"
-          },
-          {
-            "name": "Sonarr.Mono",
-            "version": "4.0.17"
           },
           {
             "name": "Sonarr.RuntimePatches",
@@ -410,7 +406,7 @@
           },
           {
             "name": "Sonarr.SignalR",
-            "version": "4.0.17"
+            "version": "4.0.16"
           },
           {
             "name": "Swashbuckle.AspNetCore.Annotations",
@@ -717,7 +713,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 117,
+        "dotnet": 116,
         "freebsd": 57,
         "go": 0,
         "java": 0,
@@ -726,13 +722,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 174
+        "total": 173
       }
     },
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-04-07T15:41:06Z",
+      "generated": "2026-04-08T20:01:30Z",
       "packages": {
         "dotnet": [
           {
@@ -1112,7 +1108,7 @@
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Core",
+            "name": "Sonarr.Host",
             "version": "4.0.16"
           },
           {
@@ -1405,9 +1401,9 @@
       }
     },
     "pkg-latest": {
-      "app_version": "4.0.16.2944_1",
+      "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-04-07T15:41:50Z",
+      "generated": "2026-04-08T20:01:04Z",
       "packages": {
         "dotnet": [
           {
@@ -1780,23 +1776,31 @@
           },
           {
             "name": "SixLabors.ImageSharp",
-            "version": "3.1.7"
+            "version": "3.1.12"
           },
           {
             "name": "Sonarr.Common",
-            "version": "4.0.16"
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.16"
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Host",
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.Http",
-            "version": "4.0.16"
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.RuntimePatches",
-            "version": "4.0.16"
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.SignalR",
+            "version": "4.0.17"
           },
           {
             "name": "Swashbuckle.AspNetCore.Annotations",
@@ -2046,7 +2050,7 @@
           },
           {
             "name": "sonarr",
-            "version": "4.0.16.2944_1"
+            "version": "4.0.17.2952"
           },
           {
             "name": "sqlite3",
@@ -2063,7 +2067,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 113,
+        "dotnet": 115,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2072,7 +2076,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 160
+        "total": 162
       }
     }
   }
