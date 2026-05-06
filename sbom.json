@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-30T23:39:01Z",
+  "generated": "2026-05-06T23:29:45Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-04-30T23:37:07Z",
+      "generated": "2026-05-06T23:28:25Z",
       "packages": {
         "dotnet": [
           {
@@ -381,6 +381,10 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.17"
+          },
+          {
             "name": "Sonarr.Common",
             "version": "4.0.17"
           },
@@ -389,7 +393,15 @@
             "version": "4.0.17"
           },
           {
+            "name": "Sonarr.Host",
+            "version": "4.0.17"
+          },
+          {
             "name": "Sonarr.Http",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.Mono",
             "version": "4.0.17"
           },
           {
@@ -572,11 +584,11 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p6"
+            "version": "15.0p8"
           },
           {
             "name": "FreeBSD-runtime-lib32",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -604,7 +616,7 @@
           },
           {
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "ca_root_nss",
@@ -701,7 +713,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 114,
+        "dotnet": 117,
         "freebsd": 56,
         "go": 0,
         "java": 0,
@@ -710,13 +722,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 170
+        "total": 173
       }
     },
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-04-30T23:37:07Z",
+      "generated": "2026-05-06T23:07:22Z",
       "packages": {
         "dotnet": [
           {
@@ -1104,11 +1116,15 @@
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.RuntimePatches",
+            "name": "Sonarr.Http",
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.SignalR",
+            "name": "Sonarr.Mono",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.RuntimePatches",
             "version": "4.0.16"
           },
           {
@@ -1263,7 +1279,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p6"
+            "version": "15.0p8"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -1291,7 +1307,7 @@
           },
           {
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "ca_root_nss",
@@ -1376,7 +1392,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 114,
+        "dotnet": 115,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -1385,13 +1401,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 161
+        "total": 162
       }
     },
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-04-30T23:37:43Z",
+      "generated": "2026-05-06T23:11:56Z",
       "packages": {
         "dotnet": [
           {
@@ -1767,10 +1783,6 @@
             "version": "3.1.12"
           },
           {
-            "name": "Sonarr.Api.V3",
-            "version": "4.0.17"
-          },
-          {
             "name": "Sonarr.Common",
             "version": "4.0.17"
           },
@@ -1942,7 +1954,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p6"
+            "version": "15.0p8"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -1970,7 +1982,7 @@
           },
           {
             "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
+            "version": "15.0p7"
           },
           {
             "name": "ca_root_nss",
@@ -1998,7 +2010,7 @@
           },
           {
             "name": "krb5",
-            "version": "1.22.1"
+            "version": "1.22.2"
           },
           {
             "name": "libedit",
@@ -2022,7 +2034,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.4"
+            "version": "2.7.5"
           },
           {
             "name": "readline",
@@ -2055,7 +2067,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 115,
+        "dotnet": 114,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2064,7 +2076,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 162
+        "total": 161
       }
     }
   }
