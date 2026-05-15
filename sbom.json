@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-06T23:29:45Z",
+  "generated": "2026-05-15T23:10:53Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-05-06T23:28:25Z",
+      "generated": "2026-05-15T23:08:35Z",
       "packages": {
         "dotnet": [
           {
@@ -382,7 +382,7 @@
           },
           {
             "name": "Sonarr.Api.V3",
-            "version": "4.0.17"
+            "version": "4.0.16"
           },
           {
             "name": "Sonarr.Common",
@@ -398,7 +398,7 @@
           },
           {
             "name": "Sonarr.Http",
-            "version": "4.0.16"
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.Mono",
@@ -728,7 +728,7 @@
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-05-06T23:07:22Z",
+      "generated": "2026-05-15T23:09:39Z",
       "packages": {
         "dotnet": [
           {
@@ -1116,15 +1116,15 @@
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Http",
-            "version": "4.0.16"
-          },
-          {
-            "name": "Sonarr.Mono",
+            "name": "Sonarr.Host",
             "version": "4.0.16"
           },
           {
             "name": "Sonarr.RuntimePatches",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.SignalR",
             "version": "4.0.16"
           },
           {
@@ -1407,7 +1407,7 @@
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-05-06T23:11:56Z",
+      "generated": "2026-05-15T23:09:20Z",
       "packages": {
         "dotnet": [
           {
@@ -1783,23 +1783,19 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.17"
+          },
+          {
             "name": "Sonarr.Common",
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.Core",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Http",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Mono",
-            "version": "4.0.17"
-          },
-          {
             "name": "Sonarr.RuntimePatches",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.SignalR",
             "version": "4.0.17"
           },
           {
@@ -1994,7 +1990,7 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "1.0"
+            "version": "1.0_1"
           },
           {
             "name": "icu",
@@ -2067,7 +2063,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 114,
+        "dotnet": 113,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2076,7 +2072,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 161
+        "total": 160
       }
     }
   }
