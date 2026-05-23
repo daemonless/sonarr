@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-15T23:10:53Z",
+  "generated": "2026-05-23T21:06:40Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-05-15T23:08:35Z",
+      "generated": "2026-05-23T21:05:22Z",
       "packages": {
         "dotnet": [
           {
@@ -382,7 +382,7 @@
           },
           {
             "name": "Sonarr.Api.V3",
-            "version": "4.0.16"
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.Common",
@@ -394,22 +394,14 @@
           },
           {
             "name": "Sonarr.Host",
-            "version": "4.0.17"
+            "version": "4.0.16"
           },
           {
             "name": "Sonarr.Http",
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.Mono",
-            "version": "4.0.17"
-          },
-          {
             "name": "Sonarr.RuntimePatches",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.SignalR",
             "version": "4.0.17"
           },
           {
@@ -620,7 +612,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.117_2"
+            "version": "3.124"
           },
           {
             "name": "compat13x-amd64",
@@ -713,7 +705,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 117,
+        "dotnet": 115,
         "freebsd": 56,
         "go": 0,
         "java": 0,
@@ -722,13 +714,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 173
+        "total": 171
       }
     },
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-05-15T23:09:39Z",
+      "generated": "2026-05-23T21:04:16Z",
       "packages": {
         "dotnet": [
           {
@@ -1116,15 +1108,11 @@
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Host",
+            "name": "Sonarr.Http",
             "version": "4.0.16"
           },
           {
             "name": "Sonarr.RuntimePatches",
-            "version": "4.0.16"
-          },
-          {
-            "name": "Sonarr.SignalR",
             "version": "4.0.16"
           },
           {
@@ -1311,7 +1299,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.117_2"
+            "version": "3.123.1"
           },
           {
             "name": "execline",
@@ -1392,7 +1380,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 115,
+        "dotnet": 114,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -1401,13 +1389,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 162
+        "total": 161
       }
     },
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-05-15T23:09:20Z",
+      "generated": "2026-05-23T21:04:47Z",
       "packages": {
         "dotnet": [
           {
@@ -1791,6 +1779,18 @@
             "version": "4.0.17"
           },
           {
+            "name": "Sonarr.Core",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Http",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Mono",
+            "version": "4.0.17"
+          },
+          {
             "name": "Sonarr.RuntimePatches",
             "version": "4.0.17"
           },
@@ -1982,7 +1982,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.117_2"
+            "version": "3.123.1"
           },
           {
             "name": "execline",
@@ -2063,7 +2063,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 113,
+        "dotnet": 116,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2072,7 +2072,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 160
+        "total": 163
       }
     }
   }
