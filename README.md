@@ -37,18 +37,18 @@ Before deploying, ensure your host environment is ready. See the [Quick Start Gu
 ```yaml
 services:
   sonarr:
-    image: ghcr.io/daemonless/sonarr:latest
+    image: "ghcr.io/daemonless/sonarr:latest"
     container_name: sonarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
+      - PUID=1000  # User ID for the application process
+      - PGID=1000  # Group ID for the application process
+      - TZ=UTC  # Timezone for the container
     volumes:
       - "/path/to/containers/sonarr:/config"
       - "/path/to/tv:/tv" # optional
       - "/path/to/downloads:/downloads" # optional
     ports:
-      - 8989:8989
+      - "8989:8989"
     annotations:
       org.freebsd.jail.allow.mlock: "true"
     restart: unless-stopped
@@ -126,7 +126,7 @@ podman run -d --name sonarr \
 - name: Deploy sonarr
   containers.podman.podman_container:
     name: sonarr
-    image: ghcr.io/daemonless/sonarr:latest
+    image: "ghcr.io/daemonless/sonarr:latest"
     state: started
     restart_policy: always
     env:
