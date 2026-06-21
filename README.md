@@ -76,6 +76,7 @@ services:
     name: sonarr
     options:
       - container: 'boot args:--pull'
+      - expose="8989:8989 proto:tcp" \
     oci:
       user: root
       environment:
@@ -104,6 +105,7 @@ OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/sonarr:${tag}
 SET allow.mlock=1
 ```
+**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Podman CLI
 
@@ -119,6 +121,25 @@ podman run -d --name sonarr \
   -v /path/to/downloads:/downloads # optional \
   ghcr.io/daemonless/sonarr:latest
 ```
+
+### AppJail
+
+```bash
+appjail oci run -Pd \
+  -o overwrite=force \
+  -o container="args:--pull" \
+  -o virtualnet=":<random> default" \
+  -o nat \
+  -o expose="8989:8989 proto:tcp" \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=UTC \
+  -o fstab="/path/to/containers/sonarr /config <pseudofs>" \
+  -o fstab="/path/to/tv /tv <pseudofs>" \ # optional
+  -o fstab="/path/to/downloads /downloads <pseudofs>" \ # optional
+  ghcr.io/daemonless/sonarr:latest sonarr
+```
+**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Ansible
 
