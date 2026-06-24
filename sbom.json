@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-21T10:04:20Z",
+  "generated": "2026-06-24T15:47:55Z",
   "image": "sonarr",
   "tags": {
     "latest": {
-      "app_version": "4.0.17.2952",
+      "app_version": "4.0.18.2971",
       "arch": "amd64",
-      "generated": "2026-06-21T10:03:04Z",
+      "generated": "2026-06-24T15:46:35Z",
       "packages": {
         "dotnet": [
           {
@@ -381,24 +381,20 @@
             "version": "3.1.12"
           },
           {
-            "name": "Sonarr",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Api.V3",
-            "version": "4.0.17"
-          },
-          {
             "name": "Sonarr.Common",
-            "version": "4.0.17"
+            "version": "4.0.18"
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.17"
+            "version": "4.0.18"
           },
           {
             "name": "Sonarr.Host",
-            "version": "4.0.17"
+            "version": "4.0.18"
+          },
+          {
+            "name": "Sonarr.Http",
+            "version": "4.0.18"
           },
           {
             "name": "Sonarr.Mono",
@@ -406,7 +402,7 @@
           },
           {
             "name": "Sonarr.RuntimePatches",
-            "version": "4.0.17"
+            "version": "4.0.18"
           },
           {
             "name": "Sonarr.SignalR",
@@ -721,7 +717,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 117,
+        "dotnet": 116,
         "freebsd": 58,
         "go": 0,
         "java": 0,
@@ -730,13 +726,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 175
+        "total": 174
       }
     },
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-06-21T10:01:34Z",
+      "generated": "2026-06-24T15:45:44Z",
       "packages": {
         "dotnet": [
           {
@@ -1112,11 +1108,11 @@
             "version": "3.1.7"
           },
           {
-            "name": "Sonarr.Api.V3",
+            "name": "Sonarr.Common",
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Common",
+            "name": "Sonarr.Core",
             "version": "4.0.16"
           },
           {
@@ -1124,11 +1120,11 @@
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.Mono",
+            "name": "Sonarr.RuntimePatches",
             "version": "4.0.16"
           },
           {
-            "name": "Sonarr.RuntimePatches",
+            "name": "Sonarr.SignalR",
             "version": "4.0.16"
           },
           {
@@ -1419,7 +1415,7 @@
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-06-21T10:02:19Z",
+      "generated": "2026-06-24T15:45:05Z",
       "packages": {
         "dotnet": [
           {
@@ -1795,27 +1791,11 @@
             "version": "3.1.12"
           },
           {
-            "name": "Sonarr.Api.V3",
-            "version": "4.0.17"
-          },
-          {
             "name": "Sonarr.Common",
             "version": "4.0.17"
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Host",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Http",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Mono",
             "version": "4.0.17"
           },
           {
@@ -2091,7 +2071,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 117,
+        "dotnet": 113,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2100,7 +2080,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 164
+        "total": 160
       }
     }
   }
