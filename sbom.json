@@ -1,16 +1,16 @@
 {
-  "generated": "2026-06-24T15:47:55Z",
+  "generated": "2026-06-26T20:44:34Z",
   "image": "sonarr",
   "tags": {
     "latest": {
-      "app_version": "4.0.18.2971",
+      "app_version": "4.0.19.2979",
       "arch": "amd64",
-      "generated": "2026-06-24T15:46:35Z",
+      "generated": "2026-06-26T20:42:23Z",
       "packages": {
         "dotnet": [
           {
             "name": "BouncyCastle.Cryptography",
-            "version": "2.4.0"
+            "version": "2.6.2"
           },
           {
             "name": "Dapper",
@@ -62,7 +62,7 @@
           },
           {
             "name": "MailKit",
-            "version": "4.8.0"
+            "version": "4.17.0"
           },
           {
             "name": "Microsoft.AspNetCore.Cryptography.Internal",
@@ -226,7 +226,7 @@
           },
           {
             "name": "MimeKit",
-            "version": "4.8.0"
+            "version": "4.17.0"
           },
           {
             "name": "Mono.Nat",
@@ -267,6 +267,10 @@
           {
             "name": "Npgsql",
             "version": "7.0.9"
+          },
+          {
+            "name": "Openur.FFprobeStatic",
+            "version": "5.1.10.23"
           },
           {
             "name": "Polly",
@@ -381,20 +385,28 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.19"
+          },
+          {
             "name": "Sonarr.Common",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Host",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Http",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Mono",
@@ -402,7 +414,7 @@
           },
           {
             "name": "Sonarr.RuntimePatches",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.SignalR",
@@ -450,7 +462,7 @@
           },
           {
             "name": "System.Security.Cryptography.Pkcs",
-            "version": "8.0.0"
+            "version": "8.0.1"
           },
           {
             "name": "System.Security.Cryptography.ProtectedData",
@@ -463,6 +475,10 @@
           {
             "name": "System.ServiceProcess.ServiceController",
             "version": "6.0.1"
+          },
+          {
+            "name": "System.Text.Encoding.CodePages",
+            "version": "8.0.0"
           },
           {
             "name": "System.Text.Json",
@@ -717,7 +733,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 116,
+        "dotnet": 120,
         "freebsd": 58,
         "go": 0,
         "java": 0,
@@ -726,13 +742,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 174
+        "total": 178
       }
     },
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-06-24T15:45:44Z",
+      "generated": "2026-06-26T20:43:21Z",
       "packages": {
         "dotnet": [
           {
@@ -1120,6 +1136,10 @@
             "version": "4.0.16"
           },
           {
+            "name": "Sonarr.Mono",
+            "version": "4.0.16"
+          },
+          {
             "name": "Sonarr.RuntimePatches",
             "version": "4.0.16"
           },
@@ -1400,7 +1420,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 114,
+        "dotnet": 115,
         "freebsd": 49,
         "go": 0,
         "java": 0,
@@ -1409,13 +1429,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 163
+        "total": 164
       }
     },
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-06-24T15:45:05Z",
+      "generated": "2026-06-26T20:42:25Z",
       "packages": {
         "dotnet": [
           {
@@ -1791,6 +1811,10 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.17"
+          },
+          {
             "name": "Sonarr.Common",
             "version": "4.0.17"
           },
@@ -1799,11 +1823,19 @@
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.RuntimePatches",
+            "name": "Sonarr.Host",
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.SignalR",
+            "name": "Sonarr.Http",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Mono",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.RuntimePatches",
             "version": "4.0.17"
           },
           {
@@ -2071,7 +2103,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 113,
+        "dotnet": 116,
         "freebsd": 47,
         "go": 0,
         "java": 0,
@@ -2080,7 +2112,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 160
+        "total": 163
       }
     }
   }
