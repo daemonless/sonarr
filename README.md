@@ -11,6 +11,9 @@ Source: dbuild templates
 
 Automated TV series collection manager that monitors, grabs, and manages your TV library via Usenet and BitTorrent.
 
+> [!WARNING]
+> **Requires ocijail ≥ 0.6.0 (annotation support).** This image needs the jail permission **allow.mlock**, applied via OCI annotations. FreeBSD **quarterly ships ocijail 0.4.0, which has no annotation support** — the container starts but the permission is silently dropped, so the app can crash or misbehave at runtime. Point your pkg repos at the `latest` branch (ocijail ≥ 0.6.0), then run with the annotation flag below. See the [ocijail guide](https://daemonless.io/guides/ocijail-patch/).
+
 | | |
 |---|---|
 | **Port** | 8989 |
@@ -19,15 +22,14 @@ Automated TV series collection manager that monitors, grabs, and manages your TV
 | **Website** | [https://sonarr.tv/](https://sonarr.tv/) |
 
 ## Version Tags
-
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
 | `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
+| `nightly` | **Nightly branch** — bleeding-edge pre-release build (Sonarr's `develop` branch). One-way DB migrations; back up /config before switching back to release. | Alternative build. |
 | `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Production stability. |
 | `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 
 ## Prerequisites
-
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
@@ -55,10 +57,11 @@ services:
 ```
 
 ### AppJail Director
-
 **.env**:
 
 ```
+# .env
+
 DIRECTOR_PROJECT=sonarr
 PUID=1000
 PGID=1000
@@ -68,6 +71,8 @@ TZ=UTC
 **appjail-director.yml**:
 
 ```yaml
+# appjail-director.yml
+
 options:
   - virtualnet: ':<random> default'
   - nat:
@@ -76,7 +81,7 @@ services:
     name: sonarr
     options:
       - container: 'boot args:--pull'
-      - expose="8989:8989 proto:tcp" \
+      - expose: '8989:8989 proto:tcp' \
     oci:
       user: root
       environment:
@@ -99,6 +104,8 @@ volumes:
 **Makejail**:
 
 ```
+# Makejail
+
 ARG tag=latest
 
 OPTION overwrite=force

@@ -3,10 +3,15 @@ FROM ghcr.io/daemonless/arr-base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="sonarr"
+# Sonarr's release feed keys versions by channel, not download branch:
+#   SONARR_BRANCH   = download branch (main | develop)  -> /v1/download/<branch>/latest
+#   SONARR_RELEASE_KEY = /v1/releases key for that branch (v4-stable=main, v4-nightly=develop)
+# Both must move together or the version stamp/check will track the wrong channel.
 ARG SONARR_BRANCH="main"
+ARG SONARR_RELEASE_KEY="v4-stable"
 ARG UPSTREAM_URL="https://services.sonarr.tv/v1/releases"
 ARG DOWNLOAD_URL="https://services.sonarr.tv/v1/download/${SONARR_BRANCH}/latest?version=4&os=freebsd"
-ARG UPSTREAM_JQ='.["v4-stable"].version'
+ARG UPSTREAM_JQ=".[\"${SONARR_RELEASE_KEY}\"].version"
 {%- if ports %}
 ARG HEALTHCHECK_ENDPOINT="http://localhost:{{ ports[0].port }}/ping"
 {%- else %}
@@ -47,7 +52,7 @@ RUN pkg update && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 
 # Download and install Sonarr
-RUN SONARR_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | grep -o '"v4-stable":{[^}]*"version":"[^"].*"' | grep -o '"version":"[^"].*' | cut -d'"' -f4) && \
+RUN SONARR_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | grep -o "\"${SONARR_RELEASE_KEY}\":{[^}]*\"version\":\"[^\"].*\"" | grep -o '"version":"[^"].*' | cut -d'"' -f4) && \
     install-arr.sh "sonarr" "Sonarr" "$SONARR_VERSION" "${DOWNLOAD_URL}" "${SONARR_BRANCH}"
 
 # Copy service definition and init scripts
