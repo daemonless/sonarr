@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-07T14:06:55Z",
+  "generated": "2026-07-08T09:31:31Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.19.2979",
       "arch": "amd64",
-      "generated": "2026-07-07T14:04:45Z",
+      "generated": "2026-07-08T09:29:38Z",
       "packages": {
         "dotnet": [
           {
@@ -394,11 +394,7 @@
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.19"
-          },
-          {
-            "name": "Sonarr.Host",
-            "version": "4.0.19"
+            "version": "4.0.16"
           },
           {
             "name": "Sonarr.Http",
@@ -406,7 +402,7 @@
           },
           {
             "name": "Sonarr.Mono",
-            "version": "4.0.16"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.RuntimePatches",
@@ -729,7 +725,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 119,
+        "dotnet": 118,
         "freebsd": 58,
         "go": 0,
         "java": 0,
@@ -738,13 +734,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 177
+        "total": 176
       }
     },
     "nightly": {
       "app_version": "4.0.18.2978",
       "arch": "amd64",
-      "generated": "2026-07-07T14:05:42Z",
+      "generated": "2026-07-08T09:30:19Z",
       "packages": {
         "dotnet": [
           {
@@ -1132,15 +1128,7 @@
             "version": "4.0.18"
           },
           {
-            "name": "Sonarr.Host",
-            "version": "4.0.18"
-          },
-          {
             "name": "Sonarr.Http",
-            "version": "4.0.18"
-          },
-          {
-            "name": "Sonarr.Mono",
             "version": "4.0.16"
           },
           {
@@ -1464,7 +1452,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 118,
+        "dotnet": 116,
         "freebsd": 58,
         "go": 0,
         "java": 0,
@@ -1473,13 +1461,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 176
+        "total": 174
       }
     },
     "pkg": {
       "app_version": "4.0.16.2944_1",
       "arch": "amd64",
-      "generated": "2026-07-07T14:05:40Z",
+      "generated": "2026-07-08T09:30:11Z",
       "packages": {
         "dotnet": [
           {
@@ -1855,15 +1843,15 @@
             "version": "3.1.7"
           },
           {
-            "name": "Sonarr.Api.V3",
-            "version": "4.0.16"
-          },
-          {
             "name": "Sonarr.Common",
             "version": "4.0.16"
           },
           {
             "name": "Sonarr.Core",
+            "version": "4.0.16"
+          },
+          {
+            "name": "Sonarr.Host",
             "version": "4.0.16"
           },
           {
@@ -2170,7 +2158,7 @@
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-07-07T14:05:44Z",
+      "generated": "2026-07-08T09:30:01Z",
       "packages": {
         "dotnet": [
           {
@@ -2546,11 +2534,11 @@
             "version": "3.1.12"
           },
           {
-            "name": "Sonarr.Common",
+            "name": "Sonarr.Api.V3",
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.Core",
+            "name": "Sonarr.Common",
             "version": "4.0.17"
           },
           {
@@ -2777,7 +2765,7 @@
           },
           {
             "name": "krb5",
-            "version": "1.22.2_2"
+            "version": "1.22.2_3"
           },
           {
             "name": "libedit",
