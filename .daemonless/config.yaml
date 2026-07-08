@@ -14,11 +14,12 @@ build:
       containerfile: Containerfile
       default: true
     - tag: nightly
+      aliases: [develop]
       containerfile: Containerfile
       args:
         SONARR_BRANCH: develop
         SONARR_RELEASE_KEY: v4-nightly
-      tag_desc: "**Nightly branch** — bleeding-edge pre-release build (Sonarr's `develop` branch). One-way DB migrations; back up /config before switching back to release."
+      tag_desc: "**Develop branch** — Sonarr's pre-release channel, also published as `develop`. Sonarr has no separate nightly branch, so `nightly` and `develop` are the same build. One-way DB migrations; back up /config before switching back to release."
     - tag: pkg
       containerfile: Containerfile.pkg
     - tag: pkg-latest
