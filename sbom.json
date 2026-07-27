@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-18T09:37:13Z",
+  "generated": "2026-07-27T22:18:35Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.19.2979",
       "arch": "amd64",
-      "generated": "2026-07-18T09:35:25Z",
+      "generated": "2026-07-27T22:16:23Z",
       "packages": {
         "dotnet": [
           {
@@ -385,19 +385,19 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.19"
+          },
+          {
             "name": "Sonarr.Common",
             "version": "4.0.19"
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.17"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Host",
-            "version": "4.0.17"
-          },
-          {
-            "name": "Sonarr.Http",
             "version": "4.0.19"
           },
           {
@@ -552,6 +552,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -726,7 +730,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 118,
-        "freebsd": 58,
+        "freebsd": 59,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -734,13 +738,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 176
+        "total": 177
       }
     },
     "nightly": {
-      "app_version": "4.0.18.2978",
+      "app_version": "4.0.19.2995",
       "arch": "amd64",
-      "generated": "2026-07-18T09:35:22Z",
+      "generated": "2026-07-27T22:17:21Z",
       "packages": {
         "dotnet": [
           {
@@ -1120,20 +1124,36 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr.Api.V3",
+            "version": "4.0.19"
+          },
+          {
             "name": "Sonarr.Common",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Core",
-            "version": "4.0.18"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Host",
-            "version": "4.0.18"
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Http",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Mono",
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.RuntimePatches",
-            "version": "4.0.18"
+            "version": "4.0.19"
+          },
+          {
+            "name": "Sonarr.SignalR",
+            "version": "4.0.19"
           },
           {
             "name": "Swashbuckle.AspNetCore.Annotations",
@@ -1275,6 +1295,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -1448,8 +1472,8 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 115,
-        "freebsd": 58,
+        "dotnet": 119,
+        "freebsd": 59,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1457,13 +1481,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 173
+        "total": 178
       }
     },
     "pkg": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-07-18T09:35:57Z",
+      "generated": "2026-07-27T22:16:27Z",
       "packages": {
         "dotnet": [
           {
@@ -1839,6 +1863,10 @@
             "version": "3.1.12"
           },
           {
+            "name": "Sonarr",
+            "version": "4.0.17"
+          },
+          {
             "name": "Sonarr.Common",
             "version": "4.0.17"
           },
@@ -1848,6 +1876,10 @@
           },
           {
             "name": "Sonarr.Http",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.Mono",
             "version": "4.0.17"
           },
           {
@@ -1982,6 +2014,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -2131,8 +2167,8 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 114,
-        "freebsd": 49,
+        "dotnet": 116,
+        "freebsd": 50,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -2140,13 +2176,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 163
+        "total": 166
       }
     },
     "pkg-latest": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-07-18T09:34:14Z",
+      "generated": "2026-07-27T22:17:21Z",
       "packages": {
         "dotnet": [
           {
@@ -2526,10 +2562,6 @@
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.Core",
-            "version": "4.0.17"
-          },
-          {
             "name": "Sonarr.Http",
             "version": "4.0.17"
           },
@@ -2539,6 +2571,10 @@
           },
           {
             "name": "Sonarr.RuntimePatches",
+            "version": "4.0.17"
+          },
+          {
+            "name": "Sonarr.SignalR",
             "version": "4.0.17"
           },
           {
@@ -2668,6 +2704,10 @@
             "version": "15.0"
           },
           {
+            "name": "FreeBSD-locales",
+            "version": "15.0"
+          },
+          {
             "name": "FreeBSD-mtree",
             "version": "15.0"
           },
@@ -2773,7 +2813,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.1"
           },
           {
             "name": "readline",
@@ -2807,7 +2847,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 114,
-        "freebsd": 47,
+        "freebsd": 48,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -2815,7 +2855,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 161
+        "total": 162
       }
     }
   }
