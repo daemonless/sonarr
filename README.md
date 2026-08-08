@@ -81,7 +81,7 @@ services:
     name: sonarr
     options:
       - container: 'boot args:--pull'
-      - expose: '8989:8989 proto:tcp' \
+      - expose: '8989:8989 proto:tcp'
     oci:
       user: root
       environment:
