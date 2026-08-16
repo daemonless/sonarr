@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-08T23:01:39Z",
+  "generated": "2026-08-16T17:43:03Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.19.2979",
       "arch": "amd64",
-      "generated": "2026-08-08T22:57:33Z",
+      "generated": "2026-08-16T17:41:06Z",
       "packages": {
         "dotnet": [
           {
@@ -491,7 +491,7 @@
           {
             "name": "Sonarr.Api.V3",
             "purl": "",
-            "version": "4.0.17"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.Common",
@@ -500,6 +500,11 @@
           },
           {
             "name": "Sonarr.Core",
+            "purl": "",
+            "version": "4.0.19"
+          },
+          {
+            "name": "Sonarr.Host",
             "purl": "",
             "version": "4.0.19"
           },
@@ -511,7 +516,7 @@
           {
             "name": "Sonarr.Mono",
             "purl": "",
-            "version": "4.0.17"
+            "version": "4.0.19"
           },
           {
             "name": "Sonarr.RuntimePatches",
@@ -521,7 +526,7 @@
           {
             "name": "Sonarr.SignalR",
             "purl": "",
-            "version": "4.0.17"
+            "version": "4.0.19"
           },
           {
             "name": "Swashbuckle.AspNetCore.Annotations",
@@ -1035,7 +1040,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 120,
+        "dotnet": 121,
         "freebsd": 59,
         "go": 0,
         "java": 0,
@@ -1044,13 +1049,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 179
+        "total": 180
       }
     },
     "nightly": {
-      "app_version": "4.0.19.2997",
+      "app_version": "4.0.19.3001",
       "arch": "amd64",
-      "generated": "2026-08-08T22:59:37Z",
+      "generated": "2026-08-16T17:42:19Z",
       "packages": {
         "dotnet": [
           {
@@ -1536,7 +1541,7 @@
           {
             "name": "Sonarr.Api.V3",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.17"
           },
           {
             "name": "Sonarr.Common",
@@ -1549,7 +1554,17 @@
             "version": "4.0.19"
           },
           {
+            "name": "Sonarr.Host",
+            "purl": "",
+            "version": "4.0.19"
+          },
+          {
             "name": "Sonarr.Http",
+            "purl": "",
+            "version": "4.0.19"
+          },
+          {
+            "name": "Sonarr.Mono",
             "purl": "",
             "version": "4.0.19"
           },
@@ -1561,7 +1576,7 @@
           {
             "name": "Sonarr.SignalR",
             "purl": "",
-            "version": "4.0.17"
+            "version": "4.0.19"
           },
           {
             "name": "Swashbuckle.AspNetCore.Annotations",
@@ -2075,7 +2090,7 @@
       },
       "source": "upstream",
       "summary": {
-        "dotnet": 119,
+        "dotnet": 121,
         "freebsd": 59,
         "go": 0,
         "java": 0,
@@ -2084,13 +2099,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 178
+        "total": 180
       }
     },
     "pkg": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-08-08T22:12:44Z",
+      "generated": "2026-08-16T17:41:26Z",
       "packages": {
         "dotnet": [
           {
@@ -2579,7 +2594,7 @@
             "version": "4.0.17"
           },
           {
-            "name": "Sonarr.Mono",
+            "name": "Sonarr.Host",
             "purl": "",
             "version": "4.0.17"
           },
@@ -3052,7 +3067,7 @@
     "pkg-latest": {
       "app_version": "4.0.19.2979",
       "arch": "amd64",
-      "generated": "2026-08-08T22:12:52Z",
+      "generated": "2026-08-16T17:42:13Z",
       "packages": {
         "dotnet": [
           {
@@ -3551,6 +3566,11 @@
             "version": "4.0.19"
           },
           {
+            "name": "Sonarr.Mono",
+            "purl": "",
+            "version": "4.0.19"
+          },
+          {
             "name": "Sonarr.RuntimePatches",
             "purl": "",
             "version": "4.0.19"
@@ -3961,7 +3981,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.1_1"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -4009,7 +4029,7 @@
       },
       "source": "pkg",
       "summary": {
-        "dotnet": 118,
+        "dotnet": 119,
         "freebsd": 50,
         "go": 0,
         "java": 0,
@@ -4018,7 +4038,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 168
+        "total": 169
       }
     }
   }
