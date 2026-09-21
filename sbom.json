@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-12T09:22:44Z",
+  "generated": "2026-09-21T09:11:26Z",
   "image": "sonarr",
   "tags": {
     "latest": {
-      "app_version": "4.0.19.2979",
+      "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-09-12T09:21:57Z",
+      "generated": "2026-09-21T09:10:41Z",
       "packages": {
         "dotnet": [
           {
@@ -491,47 +491,47 @@
           {
             "name": "Sonarr",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.Api.V3",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.Common",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.Core",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.Host",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.Http",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.Mono",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.RuntimePatches",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Sonarr.SignalR",
             "purl": "",
-            "version": "4.0.19"
+            "version": "4.0.20"
           },
           {
             "name": "Swashbuckle.AspNetCore.Annotations",
@@ -667,6 +667,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -820,6 +827,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -891,7 +905,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -990,7 +1004,7 @@
               "APACHE20"
             ],
             "name": "openssl",
-            "version": "3.0.21,1"
+            "version": "3.0.22,1"
           },
           {
             "licenses": [
@@ -1046,7 +1060,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 122,
-        "freebsd": 59,
+        "freebsd": 61,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1054,13 +1068,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 181
+        "total": 183
       }
     },
     "nightly": {
       "app_version": "4.0.20.3012",
       "arch": "amd64",
-      "generated": "2026-09-12T09:22:00Z",
+      "generated": "2026-09-21T09:10:01Z",
       "packages": {
         "dotnet": [
           {
@@ -1726,6 +1740,13 @@
           },
           {
             "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-fetch",
@@ -1875,6 +1896,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -1946,7 +1974,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -2045,7 +2073,7 @@
               "APACHE20"
             ],
             "name": "openssl",
-            "version": "3.0.21,1"
+            "version": "3.0.22,1"
           },
           {
             "licenses": [
@@ -2101,7 +2129,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 122,
-        "freebsd": 59,
+        "freebsd": 61,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -2109,13 +2137,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 181
+        "total": 183
       }
     },
     "pkg": {
       "app_version": "4.0.17.2952",
       "arch": "amd64",
-      "generated": "2026-09-12T09:21:21Z",
+      "generated": "2026-09-21T09:10:19Z",
       "packages": {
         "dotnet": [
           {
@@ -2764,6 +2792,13 @@
           },
           {
             "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-fetch",
@@ -2885,6 +2920,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -2949,7 +2991,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -3083,7 +3125,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 120,
-        "freebsd": 50,
+        "freebsd": 52,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -3091,13 +3133,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 170
+        "total": 172
       }
     },
     "pkg-latest": {
       "app_version": "4.0.19.2979",
       "arch": "amd64",
-      "generated": "2026-09-12T09:21:13Z",
+      "generated": "2026-09-21T09:09:45Z",
       "packages": {
         "dotnet": [
           {
@@ -3751,6 +3793,13 @@
           },
           {
             "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-fetch",
@@ -3872,6 +3921,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -3936,7 +3992,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -4070,7 +4126,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 121,
-        "freebsd": 50,
+        "freebsd": 52,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -4078,7 +4134,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 171
+        "total": 173
       }
     }
   }
