@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-10T21:35:29Z",
+  "generated": "2026-10-20T22:23:34Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-10-10T21:34:00Z",
+      "generated": "2026-10-20T22:22:50Z",
       "packages": {
         "dotnet": [
           {
@@ -830,7 +830,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -886,7 +886,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -900,7 +900,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -999,7 +999,7 @@
               "APACHE20"
             ],
             "name": "openssl",
-            "version": "3.0.22,1"
+            "version": "3.5.9,1"
           },
           {
             "licenses": [
@@ -1013,7 +1013,7 @@
               "GPLv3"
             ],
             "name": "readline",
-            "version": "8.3.3"
+            "version": "8.3.6"
           },
           {
             "licenses": [
@@ -1041,7 +1041,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.3,1"
+            "version": "3.53.4,1"
           }
         ],
         "go": [],
@@ -1069,7 +1069,7 @@
     "nightly": {
       "app_version": "4.0.20.3012",
       "arch": "amd64",
-      "generated": "2026-10-10T21:34:07Z",
+      "generated": "2026-10-20T22:15:49Z",
       "packages": {
         "dotnet": [
           {
@@ -1894,7 +1894,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -1950,7 +1950,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -1964,7 +1964,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -2063,7 +2063,7 @@
               "APACHE20"
             ],
             "name": "openssl",
-            "version": "3.0.22,1"
+            "version": "3.5.9,1"
           },
           {
             "licenses": [
@@ -2077,7 +2077,7 @@
               "GPLv3"
             ],
             "name": "readline",
-            "version": "8.3.3"
+            "version": "8.3.6"
           },
           {
             "licenses": [
@@ -2105,7 +2105,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.3,1"
+            "version": "3.53.4,1"
           }
         ],
         "go": [],
@@ -2133,7 +2133,7 @@
     "pkg": {
       "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-10-10T21:34:03Z",
+      "generated": "2026-10-20T22:21:49Z",
       "packages": {
         "dotnet": [
           {
@@ -2923,7 +2923,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -2972,7 +2972,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -2986,7 +2986,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -3134,7 +3134,7 @@
     "pkg-latest": {
       "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-10-10T21:34:50Z",
+      "generated": "2026-10-20T22:19:28Z",
       "packages": {
         "dotnet": [
           {
@@ -3924,7 +3924,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -3973,7 +3973,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -3987,7 +3987,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
