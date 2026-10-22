@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-20T22:23:34Z",
+  "generated": "2026-10-22T23:01:15Z",
   "image": "sonarr",
   "tags": {
     "latest": {
       "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-10-20T22:22:50Z",
+      "generated": "2026-10-22T22:59:56Z",
       "packages": {
         "dotnet": [
           {
@@ -918,13 +918,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
-          },
-          {
-            "licenses": [
               "GPLv3+",
               "LGPL21+"
             ],
@@ -1017,20 +1010,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "licenses": [
               "GPLv3"
             ],
             "name": "sonarr",
@@ -1055,7 +1034,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 121,
-        "freebsd": 61,
+        "freebsd": 58,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1063,13 +1042,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 182
+        "total": 179
       }
     },
     "nightly": {
       "app_version": "4.0.20.3012",
       "arch": "amd64",
-      "generated": "2026-10-20T22:15:49Z",
+      "generated": "2026-10-22T23:00:04Z",
       "packages": {
         "dotnet": [
           {
@@ -1982,13 +1961,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
-          },
-          {
-            "licenses": [
               "GPLv3+",
               "LGPL21+"
             ],
@@ -2081,20 +2053,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "licenses": [
               "GPLv3"
             ],
             "name": "sonarr",
@@ -2119,7 +2077,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 121,
-        "freebsd": 61,
+        "freebsd": 58,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -2127,13 +2085,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 182
+        "total": 179
       }
     },
     "pkg": {
       "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-10-20T22:21:49Z",
+      "generated": "2026-10-22T23:00:19Z",
       "packages": {
         "dotnet": [
           {
@@ -2990,13 +2948,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
-          },
-          {
-            "licenses": [
               "GPLv3+",
               "LGPL21+"
             ],
@@ -3082,20 +3033,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "licenses": [
               "GPLv3"
             ],
             "name": "sonarr",
@@ -3120,7 +3057,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 121,
-        "freebsd": 52,
+        "freebsd": 49,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -3128,13 +3065,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 173
+        "total": 170
       }
     },
     "pkg-latest": {
       "app_version": "4.0.20.3014",
       "arch": "amd64",
-      "generated": "2026-10-20T22:19:28Z",
+      "generated": "2026-10-22T23:00:42Z",
       "packages": {
         "dotnet": [
           {
@@ -3991,13 +3928,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
-          },
-          {
-            "licenses": [
               "GPLv3+",
               "LGPL21+"
             ],
@@ -4083,20 +4013,6 @@
           },
           {
             "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "licenses": [
               "GPLv3"
             ],
             "name": "sonarr",
@@ -4121,7 +4037,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 121,
-        "freebsd": 52,
+        "freebsd": 49,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -4129,7 +4045,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 173
+        "total": 170
       }
     }
   }
