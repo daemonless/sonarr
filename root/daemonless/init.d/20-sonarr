@@ -9,7 +9,10 @@ echo "[sonarr] Setting up sonarr user with PUID=$PUID PGID=$PGID"
 # Modify sonarr user/group to match requested UID/GID
 pw groupmod sonarr -g "$PGID" 2>/dev/null || true
 
-# Ensure config directory has correct ownership
-chown -R bsd:bsd /config
+# Ensure config directory has correct ownership (as non-root the
+# runtime owns /config)
+if [ "$(id -u)" = 0 ]; then
+    chown -R bsd:bsd /config
+fi
 
 echo "[sonarr] Configuration complete"

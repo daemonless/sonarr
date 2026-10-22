@@ -53,9 +53,10 @@ RUN SONARR_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | grep -o "\"${SONARR_RELEASE
 
 # Copy service definition and init scripts
 COPY root/ /
+RUN rm /daemonless/libexec/sonarr.pkg && \
+    chmod +x /daemonless/init.d/20-sonarr /daemonless/libexec/sonarr
 
-# Make scripts executable
-RUN chmod +x /etc/services.d/sonarr/run /etc/cont-init.d/* 2>/dev/null || true
+CMD ["/daemonless/libexec/sonarr"]
 
 # --- Expose (Injected by Generator) ---
 EXPOSE 8989

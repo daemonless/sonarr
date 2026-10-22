@@ -5,7 +5,7 @@
 # --------------------------------------------------------------------------
 
 ARG BASE_VERSION=15.1
-FROM ghcr.io/daemonless/base:${BASE_VERSION}
+FROM ghcr.io/daemonless/base-exec:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PKG_NAME=sonarr
@@ -44,15 +44,11 @@ RUN mkdir -p /config && \
 # Copy service definition
 COPY root/ /
 
-# Use pkg-specific run script
-COPY root/etc/services.d/sonarr/run.pkg /etc/services.d/sonarr/run
+# The pkg layout's launcher
+RUN mv /daemonless/libexec/sonarr.pkg /daemonless/libexec/sonarr && \
+    chmod +x /daemonless/init.d/20-sonarr /daemonless/libexec/sonarr
 
-# Make scripts executable
-RUN chmod +x /etc/services.d/sonarr/run /etc/cont-init.d/* 2>/dev/null || true
-
-# Set up s6 service link
-RUN mkdir -p /run/s6/services/sonarr && \
-    ln -sf /etc/services.d/sonarr/run /run/s6/services/sonarr/run
+CMD ["/daemonless/libexec/sonarr"]
 
 # --- Expose (Injected by Generator) ---
 EXPOSE 8989

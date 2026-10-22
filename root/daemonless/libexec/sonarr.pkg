@@ -1,5 +1,5 @@
 #!/bin/sh
-# Sonarr s6 service (pkg version)
+# Start Sonarr (pkg layout); /init has already dropped to bsd.
 
 # Required environment for .NET on FreeBSD
 export HOME=/config
@@ -10,4 +10,4 @@ export CLR_OPENSSL_VERSION_OVERRIDE=35
 export DOTNET_SYSTEM_NET_DISABLEIPV6=1
 
 cd /config
-exec /usr/local/bin/s6-setuidgid bsd /usr/local/share/sonarr/bin/Sonarr -nobrowser -data=/config
+exec /usr/local/share/sonarr/bin/Sonarr -nobrowser -data=/config "$@"
